@@ -1,0 +1,157 @@
+<!-- Lucky Shrubs Landscaping Company-->
+<!-- Homepage -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lucky Shrubs</title>
+
+        <meta property="og:title" content="Homepage">
+        <meta property="og:type"  content="website">
+        <meta property="og:image" content="logo.png">
+        <meta property="og:url"   content="https://luckyshrubs/">
+        <meta property="og:description" content="Lucky Shrub is a medium-sized garden design firm that specializes in garden design and creation, maintenance and landscaping. ">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Lucky Shrubs">
+
+        <link rel="stylesheet" href="./CSS/lucky_shrubs_homepage_styles.css">
+    </head>
+    <body>
+        <header>
+             <!-- Header - Logo-->
+            <img src="./Media/Images/Lucky Shrub Logos/logo_green.png" alt="Little Shrubs Logo" width="150" height="250">
+        </header>
+        <nav>
+            <!-- Navigation -->
+            <div id="nav_wrap">
+                <ul class="nav_zoom">
+                    <li>
+                        <a href="#nav_wrap" style="text-decoration:none">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services" style="text-decoration:none">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="#book" style="text-decoration:none">Book Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact" style="text-decoration:none">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <!-- Main -->
+            <section>
+                <article>
+                    <h1>About Us</h1>
+                    <div>
+                        <img src="./Media/Images/Lucky Shrub Logos/about_us_1.png" alt="House Garden" id="house_garden">
+                    </div>
+                    <div>
+                        <p>
+                            We are a medium-sized garden design firm that specializes
+                            in garden design and creation, maintenance and landscaping.
+                            We also run a small plant nursery that sells indoor and outdoor 
+                            plants, making us your one-stop shop to transform any space into 
+                            an oasis you can be proud of.
+                        </p>
+                        <p>
+                            Lucky Shrub was started by a husband and wife team, Jason and Maria, 
+                            who share a long-time love for plants. Jason is the garden architect. 
+                            He creates and oversees all designs while managing his team of landscapers. 
+                            Maria manages all the marketing for the company and oversees the nursery.
+                        </p>
+                    </div>
+
+                </article>
+            </section>
+            <section id="services_book_contact_section">
+                <article id="services">
+                    <h2>Our Services</h2>
+                    <div>
+                        <img src="./Media/Images/Lucky Shrub Logos/lawnmower.png" alt="Landscaping" id="service_pics">
+                    </div>
+                    <p>We offer the following services:</p>
+                    <ul>
+                        <li>Garden Design</li>
+                        <li>Garden Maintenance</li>
+                        <li>Landscaping</li>
+                        <li>Plant Nursey</li>
+                        <li>Garden Consultation</li>
+                    </ul>
+                </article>
+                <article id="book">
+                    <h2>Book Services</h2>
+                    <div>
+                        <img src="./Media/Images/Lucky Shrub Logos/hedge_2_resized.jpg" alt="Landscaping" id="service_pics">
+                    </div>
+                    <p>Book services below:</p>
+                    <form>
+                        <div>
+                            <label for="services">Service:</label>
+                            <select id="services" name="services">
+                                <option value="Design">Design</option>
+                                <option value="Maintenance">Maintenance</option>
+                                <option value="Landscaping">Landscaping</option>
+                                <option value="Plant Nursey">Plant Nursey</option>
+                                <option value="Consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="user_email">Email:</label>
+                            <input type="email" id="user_email" name="user_email" required>
+                        </div>
+                        <div id="book">
+                            <label for="booking_date">Date:</label>
+                            <input type="date" id="booking_date" name="booking_date" required>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="submit">Book Now</button>
+                        </div>
+                    </form>
+                </article>
+                <article id="contact">
+                    <h2>Contact Us</h2>
+                    <div>
+                        <img src="./Media/Images/Lucky Shrub Logos/contact_2.png" alt="Landscaping" id="service_pics">
+                    </div>
+                    <p>
+                        We would be happy to connect with you about your project. Please contact us 
+                        using the information below and we will be happy to assist:
+                    </p>
+                    <ul>
+                        <li>
+                            Phone: <a href="phone.html">000-123-4567</a>
+                        </li>
+                        <li>
+                            Email: <a href="email.html">j&m@gmail.com</a>
+                        </li>
+                    </ul>
+                    <p>
+                        Our hours are:
+                    </p>
+                    <ul>
+                        <li>
+                            Mon - Sun: 9 AM - 3 PM
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+        <br>
+        <footer>
+            <div>
+                <img src="./Media/Images/Lucky Shrub Logos/logo_green.png" alt="Little Shrubs Logo" width="50" height="80">
+            </div>
+            <div>
+                <hr id="copyright_line">
+                <p id="copyright">Copyright Lucky Shrubs</p>
+            </div>
+        </footer>
+        <div id="scroll">
+            <a href="#top">To Top</a>
+          </div>
+    </body>
+</html>
