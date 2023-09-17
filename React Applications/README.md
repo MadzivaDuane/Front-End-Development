@@ -1,4 +1,6 @@
-# This folder contains a list of all REACT projects I have made as part of Coursework, Online Training/ Watch & Learn and Personal Projects.
+# React Applications
+
+This folder contains a list of all REACT projects I have made as part of Coursework, Online Training/ Watch & Learn and Personal Projects.
 
 ## 1. Coursework
 
