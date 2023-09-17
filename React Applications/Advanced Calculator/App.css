@@ -1,0 +1,94 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+/*In body
+- Remove all margins
+- Background color is  a color gradient
+*/
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+}
+
+/*Calculator grid (body of entire calculator:
+- Set display to grid
+- Add 2 rem to top of calculator to give space from top part of screen
+- grid-template-columns: repeats 4 columns, and 6rem is for button sizes
+- grid-template-rows: determines height of boxes; minmax focuses on the first segment allowing it to grow with input, the remaining repeat is for all otehr buttons
+- Justify-content: centers the calulator on the screen
+
+*/
+.calculator-grid {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  justify-content: center;
+
+}
+
+/*In span-two:
+- Allows a button to span 2 columns eg AC, DEL, =
+*/
+.span-two {
+  grid-column: span 2;
+}
+
+/*Output:
+- Screen, span 1 to -1 allows output to span the entire width of the calculator
+- Add dark screen with background color
+- Display flex creates a FlexBox (layout similar to Grids)
+- Flex direction: column stacks all divs within the major div (operands)
+- Align-items: flex-end aligns divs to the right/ end
+- Justify-content: space-around creates seperation between the 2 divs
+- Padding creates space from margins of major div
+- Wrap allows text to wrap/go to the next line when the screen ends
+*/
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+/*Editing buttons:
+- Cursor lets you pick which cursor design for your calculator
+- Border stles the lines/ boarders
+
+- Focus: color of button when cursor presses the button
+- Hover: color of button when cursor hovers above the button
+*/
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75)
+
+}
+
+.calculator-grid > button:focus {
+  background-color: rgba(255, 255, 255, 0.9)
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9)
+}
