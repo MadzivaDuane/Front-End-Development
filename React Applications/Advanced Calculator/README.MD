@@ -3,5 +3,4 @@
 
 # Advanced Calculator
 
-<video src="https://github.com/MadzivaDuane/Front-End-Development/blob/main/React%20Applications/Media/Advanced%20Calculator%20Use.mov" controls="controls" style="max-width: 730px;">
-</video>
+<img src="https://github.com/MadzivaDuane/Front-End-Development/blob/main/React%20Applications/Media/Advanced-Calculator-Use.gif" width = 100% height = 100% />
